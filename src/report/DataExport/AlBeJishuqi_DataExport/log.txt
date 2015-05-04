@@ -1,8 +1,0 @@
-3 argument
-D:\work\PubFunction\python\PictureServer\src\report\DataExport\AlBeJishuqi_DataExport\exportdata\20120916123226_alphabeta.txt
-201209161021
-D:\work\PubFunction\python\PictureServer\src\report\DataExport\AlBeJishuqi_DataExport\exportdata\20120916123226_alphabeta.txt
-the select list is :
-['1347762105', '10', '201209161021', '0,0,0,', '2000,2000,2000,', 'S90', '0']
-word dir is:D:\work\PubFunction\python\PictureServer\src\report\DataExport\AlBeJishuqi_DataExport,templete is :D:\work\PubFunction\python\PictureServer\src\report\DataExport\AlBeJishuqi_DataExport\dist\templete\templete_AlphaBeta.doc
-
