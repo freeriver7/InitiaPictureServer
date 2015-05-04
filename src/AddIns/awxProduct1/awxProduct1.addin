@@ -1,0 +1,18 @@
+<AddIn name="awxProduct1"
+	   author="sand"
+	   copyright=""
+	   description="云图"
+	   addInManagerHidden="true">
+	   <Manifest>
+		   <Identity name="awxProduct1" /> 
+	   </Manifest>
+	   <Runtime>
+		   <Import assembly="awxProduct1.dll">
+		   </Import>
+	   </Runtime>
+	   <Path name="/Workspace/DisplayBindings">
+		   <DisplayBinding id="awxProduct1"
+		   type="Layer"
+			   class="nmc.micaps3.AWXProduct1DataBindings"/>
+	   </Path> 
+</AddIn>

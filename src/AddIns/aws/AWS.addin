@@ -1,0 +1,18 @@
+<AddIn name="AWS"
+	   author="sand"
+	   copyright=""
+	   description="自动站"
+	   addInManagerHidden="true">
+	   <Manifest>
+		   <Identity name="AWS" /> 
+	   </Manifest>
+	   <Runtime>
+		   <Import assembly="autoWeaStation.dll">
+		   </Import>
+	   </Runtime>
+	   <Path name="/Workspace/DisplayBindings">
+		   <DisplayBinding id="autoWeaStation"
+		   type="Layer"
+			   class="autoWeaStation.AWSDataBindings"/>
+	   </Path> 
+</AddIn>

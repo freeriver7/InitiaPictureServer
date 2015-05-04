@@ -1,0 +1,14 @@
+主要配置文件
+datasource.conf  输入数据类型定义
+hunterproduct.conf 猎手可以处理的产品定义
+operate.conf 交互操作定义 名称 源0 产品1 操作拉线1 ID
+preproc.conf 预处理定义
+procreg.conf 产品注册信息（二进制）
+pupproduct.conf 可显示的PUP产品定义
+radarsite.conf 雷达站点信息定义
+hunterconfig.conf 猎手系统变量存储
+usersite.conf 用户可选站点定义
+rpgconfig.conf 显示系统变量存储
+map.dat 地图显示配置信息（二进制）
+
+首先读入站点列表radarsite.conf，使用站点列表中的雷达型号在datasource.conf中寻找对应的数字代码，将这个作为参数传入readData函数中的雷达型号。使用Preproc.conf中定义的预处理过程，作为doPreproc函数的参数，operate和prodlst两个配置文件中记录了可以交互操作的以及固定的产品的参数，作为setProduct的参数。

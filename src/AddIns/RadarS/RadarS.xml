@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="gb2312"?>
+<RadarS name="RadarS">
+  <Enactment>
+    <BaseDataPath name="BaseData" dirName="D:\work\AIW\testdata\BJRadar" />
+    <PUPProductPath name="PUPProduct" dirName="W:\radar\Products" />
+  </Enactment>
+  <Mode>
+    <t213 nameCH="T213" dirName="z:\data\t213">
+      <Field id="1" NameCH="温度" NameEn="temper" />
+    </t213>
+    <Europe nameCH="EC" dirName="newecmwf">
+      <Field id="1" NameCH="温度" NameEn="temper" />
+      <Field id="2" NameCH="高度" NameEn="height" />
+      <Field id="3" NameCH="相对湿度" NameEn="rh" />
+      <Field id="4" NameCH="气压" NameEn="pressure" />
+      <Field id="5" NameCH="u风" NameEn="uv" />
+      <Field id="6" NameCH="v风" NameEn="wind" />
+      <Field id="7" NameCH="12h降水量" NameEn="rain" />
+    </Europe>
+  </Mode>
+</RadarS>

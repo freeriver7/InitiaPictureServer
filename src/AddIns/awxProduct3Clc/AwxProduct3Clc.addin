@@ -1,0 +1,18 @@
+<AddIn name="awxProduct3Clc"
+	   author="sand"
+	   copyright=""
+	   description="卫星资料\数值产品"
+	   addInManagerHidden="true">
+	   <Manifest>
+		   <Identity name="awxProduct3Clc" /> 
+	   </Manifest>
+	   <Runtime>
+		   <Import assembly="awxProduct3Clc.dll">
+		   </Import>
+	   </Runtime>
+	   <Path name="/Workspace/DisplayBindings">
+		   <DisplayBinding id="awxProduct3Clc"
+		   type="Layer"
+			   class="awxProduct3Clc.AwxProduct3ClcDataBindings"/>
+	   </Path> 
+</AddIn>

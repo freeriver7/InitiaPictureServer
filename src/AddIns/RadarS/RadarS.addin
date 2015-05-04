@@ -1,0 +1,25 @@
+<AddIn name="ModuleExample"
+	   author="wufang"
+	   copyright=""
+	   description="雷达S"
+	   addInManagerHidden="true">
+	   <Manifest>
+		   <Identity name="nmc.micaps3.radars" /> 
+	   </Manifest>
+	   <Runtime>
+		   <Import assembly="radars.dll">
+		   </Import>
+	   </Runtime>
+	   <!--<StringResources BaseName="Strings"/>
+	   <BitmapResources BaseName="Bitmaps"/>-->
+
+	   <!--tool bars-->
+	   <Path name="/Workspace/Toolbar/nmc.micaps3">
+		   <ToolbarItem id="ShowRadars"
+			   label="雷达"
+			   tooltip = "雷达"
+			   icon = "Toolbar.Icons.Radars"
+			   class="RadarS.ShowRadarSCommand"/>
+	   </Path>
+
+</AddIn>

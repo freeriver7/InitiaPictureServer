@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Micaps.Message</name>
+    </assembly>
+    <members>
+        <member name="T:Micaps.Message.ChartMessageData">
+            <summary>
+            添加Micaps图层需要消息数据
+            </summary>
+        </member>
+        <member name="P:Micaps.Message.ChartMessageData.Chart">
+            <summary>
+            原Micaps系统中表示图层的对象
+            </summary>
+        </member>
+        <member name="P:Micaps.Message.ChartMessageData.FileName">
+            <summary>
+            需要加载的文件
+            </summary>
+        </member>
+        <member name="T:Micaps.Message.MessageCommands">
+            <summary>
+            定义micaps系统支持的消息类型
+            </summary>
+        </member>
+        <member name="F:Micaps.Message.MessageCommands.None">
+            <summary>
+            无命令动作，此命令用来处理一些未知情况，避免异常
+            </summary>
+        </member>
+        <member name="F:Micaps.Message.MessageCommands.ClearLayers">
+            <summary>
+            清除所有图层
+            消息数据：无
+            </summary>
+        </member>
+        <member name="F:Micaps.Message.MessageCommands.ChangeProjection">
+            <summary>
+            改变投影
+            消息数据:ProjectionInfo，非空
+            <see cref="!:ProjectionInfo"/>
+            </summary>
+        </member>
+        <member name="F:Micaps.Message.MessageCommands.ReloadFile">
+            <summary>
+            强制图层重新打开文件
+            消息数据：string类型，格式layerid,filename，非空
+            </summary>
+        </member>
+        <member name="F:Micaps.Message.MessageCommands.AddMicapsLayer">
+            <summary>
+            添加micaps图层，原chartbase对象，此命令为了兼容老的模块设计的，非空
+            消息数据：ChartMessageData<see cref="T:Micaps.Message.ChartMessageData"/>，非空
+            </summary>
+        </member>
+        <member name="F:Micaps.Message.MessageCommands.OpenFileInNewLayer">
+            <summary>
+            打开文件形成新的图层
+            消息数据：string，文件路径，非空
+            </summary>
+        </member>
+        <member name="F:Micaps.Message.MessageCommands.OpenFileInNewView">
+            <summary>
+            打开文件形成新视图
+            消息数据：string，文件路径，非空
+            </summary>
+        </member>
+        <member name="F:Micaps.Message.MessageCommands.RemoveLayer">
+            <summary>
+            移除图层
+            消息数据：string，图层ID，非空
+            </summary>
+        </member>
+        <member name="F:Micaps.Message.MessageCommands.ShowLayer">
+            <summary>
+            显示图层
+            消息数据：string，图层ID，非空
+            </summary>
+        </member>
+        <member name="F:Micaps.Message.MessageCommands.HideLayer">
+            <summary>
+            隐藏图层
+            消息数据：string，图层ID，非空
+            </summary>
+        </member>
+        <member name="F:Micaps.Message.MessageCommands.SetCurrentLayer">
+            <summary>
+            设置当前活动图层，即Zorder最小的
+            消息数据：string，图层ID，非空
+            </summary>
+        </member>
+        <member name="F:Micaps.Message.MessageCommands.SaveImage">
+            <summary>
+            保存当前map为图片文件
+            消息数据：string，需要保存的文件路径，可以为空，使用默认路径
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,18 @@
+<AddIn name="Cloud"
+	   author="sand"
+	   copyright=""
+	   description="云图数据分析显示"
+	   addInManagerHidden="true">
+	   <Manifest>
+		   <Identity name="Cloud" /> 
+	   </Manifest>
+	   <Runtime>
+		   <Import assembly="Cloud.dll">
+		   </Import>
+	   </Runtime>
+	   <Path name="/Workspace/DisplayBindings">
+		   <DisplayBinding id="Cloud"
+		   type="Layer"
+			   class="cloud.Micaps13DataFileDisplayBinding"/>
+	   </Path> 
+</AddIn>

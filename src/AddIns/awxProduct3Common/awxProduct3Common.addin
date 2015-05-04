@@ -1,0 +1,18 @@
+<AddIn name="awxProduct3Common"
+	   author="sand"
+	   copyright=""
+	   description="卫星资料\数值产品"
+	   addInManagerHidden="true">
+	   <Manifest>
+		   <Identity name="awxProduct3Common" /> 
+	   </Manifest>
+	   <Runtime>
+		   <Import assembly="awxProduct3Common.dll">
+		   </Import>
+	   </Runtime>
+	   <Path name="/Workspace/DisplayBindings">
+		   <DisplayBinding id="awxProduct3Clc"
+		   type="Layer"
+			   class="nmc.micaps3.AwxProduct3CommonDataBindings"/>
+	   </Path> 
+</AddIn>

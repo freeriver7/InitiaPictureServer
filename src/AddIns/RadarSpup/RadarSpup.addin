@@ -1,0 +1,31 @@
+<AddIn name="PUPData"
+	   author="wufang"
+	   copyright=""
+	   description="雷达S"
+	   addInManagerHidden="true">
+	   <Manifest>
+		   <Identity name="PUPData" /> 
+	   </Manifest>
+	   <Runtime>
+		   <Import assembly="PUPData.dll">
+		   </Import>
+	   </Runtime>
+	   <!--<StringResources BaseName="Strings"/>
+	   <BitmapResources BaseName="Bitmaps"/>-->
+
+       <Path name="/Workspace/DisplayBindings">
+		   <DisplayBinding id="PUPData"
+		   type="Layer"
+		   class="RadarPUP.RadarPUPDataBindings"/>
+
+	   		   <DisplayBinding id="PUPDataSearchWindowDisplayBinding"
+		   type="Layer"
+		   class="nmc.micaps3.PUPDataSearchWindowDisplayBinding"/>
+
+	   </Path>
+	 
+	   <Path name="/Workspace/MainMenu/Radar">
+            <MenuItem id = "PUPProductSearch" label="PUP产品检索"   type = "Command" icon ="" class = "nmc.micaps3.ShowPUPDataSearchWindow"
+             param="data\zht\雷达\PUP产品检索.txt"/>
+	   </Path>
+</AddIn>

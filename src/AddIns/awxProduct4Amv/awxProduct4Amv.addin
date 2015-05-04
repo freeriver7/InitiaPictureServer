@@ -1,0 +1,18 @@
+<AddIn name="awxProduct4Amv"
+	   author="sand"
+	   copyright=""
+	   description="卫星资料\数值产品"
+	   addInManagerHidden="true">
+	   <Manifest>
+		   <Identity name="awxProduct4Amv" /> 
+	   </Manifest>
+	   <Runtime>
+		   <Import assembly="awxProduct4Amv.dll">
+		   </Import>
+	   </Runtime>
+	   <Path name="/Workspace/DisplayBindings">
+		   <DisplayBinding id="awxProduct4Amv"
+		   type="Layer"
+			   class="awxProduct4Amv.AwxProduct4AmvDataBinDings"/>
+	   </Path> 
+</AddIn>

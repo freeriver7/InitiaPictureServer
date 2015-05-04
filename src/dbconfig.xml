@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dbconfig>
+	<database name="quote" type="inmemory" dllpath="none">
+		<param name="schemaid">0x0092</param>		
+		<param name="pkname">ShangPinNeiMa</param>
+	</database>
+	<database name="extdata" type="inmemory" dllpath="none">
+		<param name="schemaid">0x04a2</param>		
+		<param name="pkname">ShangPinNeiMa</param>
+		<param name="dbfile">system/data/extendedData.db</param>
+	</database>
+	<database name="min" type="period" dllpath="none">
+		<param name="dbfile">system/data/min.db</param>
+	</database>
+	<database name="15min" type="period" dllpath="none">
+		<param name="dbfile">system/data/15min.db</param>
+	</database>
+	<database name="day" type="period" dllpath="none">
+		<param name="dbfile">system/data/day.db</param>
+	</database>
+  <database name="5min" type="period" dllpath="none">
+    <param name="dbfile">system/data/5min.db</param>
+  </database>
+  <database name="30min" type="period" dllpath="none">
+    <param name="dbfile">system/data/30min.db</param>
+  </database>
+  <database name="hour" type="period" dllpath="none">
+    <param name="dbfile">system/data/hour.db</param>
+  </database>
+  <database name="week" type="period" dllpath="none">
+    <param name="dbfile">system/data/week.db</param>
+  </database>
+	<database name="month" type="period" dllpath="none">
+		<param name="dbfile">system/data/month.db</param>
+	</database>
+	<database name="snapshot" type="period" dllpath="none">
+		<param name="dbfile">system/data/snapshot.db</param>
+    <param name="pkname">ChengJiaoZongLiang</param>
+  </database>
+  <database name="tick" type="period" dllpath="none">
+    <param name="dbfile">system/data/tick.db</param>
+    <param name="pkname">MiaoBiShu</param>
+  </database>
+  <database name="related" type="goodsrelated" dllpath="none">
+		<param name="tableschame">commodityid:i;categoryid:s;categoryname:s;ids:s;optype:s;</param>
+		<param name="primary">commodityid,categoryid</param>
+		<param name="dbfile">system/data/reatedpage.db3</param>
+	</database>
+	<database name="f10" type="goodsrelated" dllpath="none">
+		<param name="tableschame">commodityid:i;content:s;lasttime:q;version:q</param>
+		<param name="primary">commodityid,version</param>
+		<param name="dbfile">system/data/f10.db3</param>
+	</database>
+	<database name="multicuster" type="goodsrelated" dllpath="none">
+		<param name="tableschame">commodityid:i;associateindustry:s;</param>
+		<param name="primary">commodityid</param>
+		<param name="dbfile">system/data/multicuster.db3</param>
+	</database>
+	<database name="news" type="SqliteTable" dllpath="none">
+		<param name="newsTitle">NewsTitle</param>		
+		<param name="newsContent">NewsContent</param>
+		<param name="dbpath">system/data/news</param>
+		<param name="dbfile">system/data/news/content.db</param>
+	</database>
+	<database name="RankList" type="ranklist" dllpath="none">
+		<param name="pkname">PaiHangLeiXingBiaoShi</param>
+		<param type="type">normal</param>
+	</database>
+	<database name="PrivolList" type="ranklist" dllpath="none">
+		<param name="pkname">JiaGe</param>
+		<param type="type">privol</param>
+	</database>
+	<database name="HKBidQue" type="ranklist" dllpath="none">
+		<param name="pkname">JingJiShangXiWeiHao</param>
+		<param type="type">normal</param>
+	</database>
+	<database name="HKAskQue" type="ranklist" dllpath="none">
+		<param name="pkname">JingJiShangXiWeiHao</param>
+		<param type="type">normal</param>
+	</database>
+	<database name="BuyQueue" type="ranklist" dllpath="none">
+		<param name="pkname">ShangPinNeiMa</param>
+		<param type="type">normal</param>
+	</database>
+	<database name="SaleQueue" type="ranklist" dllpath="none">
+		<param name="pkname">ShangPinNeiMa</param>
+		<param type="type">normal</param>
+	</database>
+	<database name="buyrank" type="ranklist" dllpath="none">
+		<param name="pkname">JiaoYiSuoNeiMa</param>
+		<param type="type">normal</param>
+	</database>
+	<database name="salerank" type="ranklist" dllpath="none">
+		<param name="pkname">JiaoYiSuoNeiMa</param>
+		<param type="type">normal</param>
+	</database>
+	<database name="buycanclerank" type="ranklist" dllpath="none">
+		<param name="pkname">JiaoYiSuoNeiMa</param>
+		<param type="type">normal</param>
+	</database>
+	<database name="salecanclerank" type="ranklist" dllpath="none">
+		<param name="pkname">JiaoYiSuoNeiMa</param>
+		<param type="type">normal</param>
+	</database>
+	<database name="totalbuycanclerank" type="ranklist" dllpath="none">
+		<param name="pkname">JiaoYiSuoNeiMa</param>
+		<param type="type">normal</param>
+	</database>
+	<database name="totalsalecanclerank" type="ranklist" dllpath="none">
+		<param name="pkname">JiaoYiSuoNeiMa</param>
+		<param type="type">normal</param>
+	</database>
+	<database name="multigoodssnap" type="ranklist" dllpath="none">
+		<param name="pkname">id</param>
+		<param name="type">multigoodssnap</param>
+	</database>
+	<database name="StatisticsTable" type="statistics" dllpath="none">
+		<param name="schemaid">FutureStatistics</param>
+	</database>
+</dbconfig>

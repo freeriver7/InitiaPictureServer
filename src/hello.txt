@@ -1,0 +1,12 @@
+            fs = select.select([pro.stdout], [], [], timeout)   
+            if pro.stdout in fs[0]:   
+                tmp = pro.stdout.read()   
+            print('read', tmp)   
+                if not tmp:   
+                    print 'end'  
+                    print time.time()   
+                    break  
+            else:   
+                print 'outoftime'  
+                print os.kill(pro.pid, signal.SIGKILL),   
+                break  

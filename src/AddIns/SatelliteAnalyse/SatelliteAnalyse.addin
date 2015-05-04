@@ -1,0 +1,19 @@
+<AddIn name="SatelliteAnalyse"
+	   author="LGP"
+	   copyright=""
+	   description="云图分析"
+	   addInManagerHidden="true">
+	   <Manifest>
+		   <Identity name="SatelliteAnalyse" /> 
+	   </Manifest>
+	   <Runtime>
+		   <Import assembly="SatelliteAnalyse.dll">
+		   </Import>
+	   </Runtime>
+
+  <Path name="/Workspace/Toolbar/nmc.micaps3">
+    <ToolbarItem id="SatelliteAnalyse.showSettingFormCommand" label="云图分析" tooltip = "云图分析"
+     icon = "Toolbar.Icons.auto.timeSeria"
+     class="SatelliteAnalyse.showSettingFormCommand"/>
+  </Path>
+</AddIn>
